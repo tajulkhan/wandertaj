@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wander_taj</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/scss/taj.scss">
+    <script src="assets/js/js.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/image/icon.png"
+    />
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">  
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar navbar-expand-md navbar-light animate__animated animate__bounceInDown">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <a class="text-decoration-none text-info" href="#">Wander_taj</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-lg-auto m-md-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Instagram</a></li>
+                <li><a class="dropdown-item" href="#">Whats app</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Face book</a></li>
+              </ul>
+            </li>
+          </ul>
+           <ul class="navbar-nav">
+              <button class="btn">LOG IN</button>
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+ 
+  <main>  
+
+<div class="row">
+  <div class="col-md-12 mt-5">
+    <div id="homepage-slider" class="st-slider">
+    
+      <input type="radio" class="cs_anchor radio" name="slider" id="slide1"/>
+      <input type="radio" class="cs_anchor radio" name="slider" id="slide2"/>
+      <input type="radio" class="cs_anchor radio" name="slider" id="slide3"/>
+      <input type="radio" class="cs_anchor radio" name="slider" id="play1" checked=""/>
+  
+      <div class="images animate__animated animate__backInUp">
+         <div class="images-inner">
+           <a href="#" class="text-dark">
+            <div class="image-slide">
+              <div class="image bg-yellow">
+                <div class="text-center">
+                  <img src="assets/image/image1.jpeg" alt="Tajulkhan" width="80px" height="80px" class="rounded-circle border border-3">
+                  <p class="fs-6 pt-2">My travel stories click on</p>
+                  <p  class="animate__animated animate__slow animate__backInUp">Kodaikkanal Trip..</p>
+                </div>
+              </div>
+            </div>
+           </a>
+          <div class="image-slide">
+            <div class="image bg-blue">
+              <div class="text-center">
+                <img src="assets/image/image1.jpeg" alt="Tajulkhan" width="80px" height="80px" class="rounded-circle border border-3">
+                <p class="fs-6">My travel stories click on.</p>
+                <p class="animate__animated animate__wobble">---Manikanda</p>
+              </div>
+            </div>
+          </div>
+          <div class="image-slide">
+            <div class="image bg-red">
+              <div class="text-center">
+                <img src="assets/image/image1.jpeg" alt="Tajulkhan" width="80px" height="80px" class="rounded-circle border border-3">
+                <p class="fs-6">My travel stories click on.</p>
+                <p class="animate__animated animate__wobble">---Tajulkhan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="labels">
+          <label for="slide1" class="label">text slide 1</label>
+          <label for="slide2" class="label">text slide 2</label>
+          <label for="slide3" class="label">text slide 3</label>
+        
+          <div class="fake-radio">
+            <label for="slide1" class="radio-btn"></label>
+            <label for="slide2" class="radio-btn"></label>
+            <label for="slide3" class="radio-btn"></label>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+  </main>
+</body>
+</html>
