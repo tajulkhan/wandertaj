@@ -110,6 +110,61 @@
         border: 0.5px solid rgb(0, 0, 0);
         background: linear-gradient(to right, rgb(255, 255, 255), rgb(39, 218, 235));
     }
+        
+.profile,
+.skill,
+.project,
+.contact {
+    max-width: 500px;
+    height: 300px;
+    border-left: 6px solid rgb(144, 252, 111);
+    background-color: rgb(236, 232, 232);
+    width: 80%;
+    margin: 20px auto 0;
+    padding: 50px;
+    border-radius: 31px;
+    background-image: url("https://cdn.pixabay.com/photo/2021/03/27/06/31/code-6127616_960_720.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+section:hover {
+    box-shadow: 2px 2px 11px grey;
+}
+
+.prl-txt>p,
+h4 {
+    text-shadow: 2px 1px 0px white;
+}
+
+.skill-txt>li>i {
+    font-size: 23px;
+    color: red;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+section>ul>li:hover {
+    list-style-type: square;
+    padding: 2px;
+}
+
+.project-txt>li>a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.cnt-txt>li>a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-shadow: 2px 2px 0px white;
+}
+
+.cnt-txt>li>a>i {
+    font-size: 23px;
+    color: rgb(87, 85, 85);
+}
     </style>    
     </head>
 
@@ -121,13 +176,54 @@
 
         <div>
             <ul class="header-menu">
-                <li class="hd-menu-item"><a href="/">Profile</a></li>
-                <li class="hd-menu-item"><a href="/">Skill</a></li>
-                <li class="hd-menu-item"><a href="/">Project</a></li>
-                <li class="hd-menu-item"><a href="/" class="active-c">Contact</a></li>
+                <li class="hd-menu-item"><a href="#profile">Profile</a></li>
+                <li class="hd-menu-item"><a href="#skill">Skill</a></li>
+                <li class="hd-menu-item"><a href="#project">Project</a></li>
+                <li class="hd-menu-item"><a href="#contact" class="active-c">Contact</a></li>
             </ul>
         </div>
     </header>
+    
+    <main>
+                <section class="profile" id="profile">
+            <div class="prl-txt">
+                <h4>Hi i am B.MOHAMED TAJUL KHAN</h4>
+                <h4>UI Developer</h4>
+                <p>7+ Months Experience</p>
+                <p>BCA-complete-2020</p>
+            </div>
+        </section>
 
+        <section class="skill" id="skill">
+            <h4>Skill</h4>
+            <ul class="skill-txt">
+                <li>Html<i class="fab fa-html5"></i></li>
+                <li>Css<i class="fab fa-css3-alt"></i></li>
+                <li>Bootstrap5<i class="fab fa-bootstrap"></i></li>
+                <li>Figma<i class="fab fa-figma"></i></li>
+                <li>Photoshop cc <i class="fas fa-bezier-curve"></i></li>
+                <li>Markdown<i class="fab fa-markdown"></i></li>
+            </ul>
+        </section>
+
+        <section class="project" id="project">
+            <h4>Projects</h4>
+            <ul class="project-txt">
+                <li><a href="http://beta.projectmadurai.org/">Project1</a></li>
+                <li><a href="https://techatpark.com/">Project2</a></li>
+                <li><a href="https://gurukulams.com/">Project3</a></li>
+            </ul>
+        </section>
+
+        <section class="contact" id="contact">
+            <h4>Contact</h4>
+            <ul class="cnt-txt">
+                <li><a target="_blank" href="https://github.com/tajulkhan ">Git hub <i class="fab fa-github"></i></a></li>
+                <li><a  href="https://www.linkedin.com/in/tajul-khan-b-s-513758220/">Linkedin <i class="fab fa-linkedin"></i></a></li>
+                <li><a href="/">tajulbasheer@gmail.com<i class="fas fa-mail-bulk"></i></a></li>
+                <li><a href="#">Instagram <i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </section>
+    </main>    
 </body>
 </html>
