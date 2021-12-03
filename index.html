@@ -25,51 +25,109 @@
      
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">  
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-.navbar-brand{
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 800;
-  font-size: 24px;
-  text-shadow: 1px 1px rgb(255, 255, 255);
+
+    
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+:root {
+    --black: #242424;
 }
-.bg{
-  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(118, 193, 236));
+
+* {
+    box-sizing: border-box;
 }
+
+.header {
+    padding: 1rem 12rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hd-menu-item {
+    list-style-type: none;
+    padding: 0.7rem 2rem;
+}
+
+.hd-menu-item>a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.brand,
+.hd-menu-item>a {
+    text-decoration: none;
+}
+
+.active-c {
+    padding: 5px;
+    border-radius: 10%;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(39, 218, 235));
+    color: var(--black) !important;
+}
+
+.color-animation {
+    animation: color-change 5s infinite;
+    font-weight: 550;
+    text-shadow: 2px 2px 2px grey;
+}
+
+@keyframes color-change {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: rgb(106, 255, 106);
+    }
+}
+    @media only screen and (max-width:700px) {
+    .header {
+        padding: 1rem 1rem;
+        background: linear-gradient(to right, white, rgb(88, 226, 226));
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .header-menu {
+        display: hide;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hd-menu-item {
+        list-style-type: none;
+        padding: 0.7rem 2px;
+    }
+    .active-c {
+        border: 0.5px solid rgb(0, 0, 0);
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(39, 218, 235));
+    }
     </style>    
     </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">wander_taj</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav me-lg-0 m-md-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Travel-stories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Social-media
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Instagram</a></li>
-              <li><a class="dropdown-item" href="#">Facebook</a></li>
-              <li><a class="dropdown-item" href="#">Whatsapp</a></li>
+    <header class="header">
+        <div>
+            <h2><a href="/" class="brand color-animation">Tajulkhan</a></h2>
+        </div>
+
+        <div>
+            <ul class="header-menu">
+                <li class="hd-menu-item"><a href="/">Profile</a></li>
+                <li class="hd-menu-item"><a href="/">Skill</a></li>
+                <li class="hd-menu-item"><a href="/">Project</a></li>
+                <li class="hd-menu-item"><a href="/" class="active-c">Contact</a></li>
             </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        </div>
+    </header>
 
 </body>
 </html>
