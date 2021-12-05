@@ -1,0 +1,280 @@
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dd-content a {
+        background-color: aquamarine;
+        padding: 12px 12px;
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .dd-content {
+        display: none;
+        min-width: 150px;
+        background-color: grey;
+        box-shadow: 2px 2px 2px yellow;
+    }
+    
+    .dd-content a:hover {
+        background-color: #f1f1f1
+    }
+    
+    .dropdown:hover .dd-content {
+        display: block;
+    }
+    
+    .animation {
+        width: 350px;
+        height: 350px;
+        border: 10px dotted red;
+        border-radius: 50%;
+        position: relative;
+        text-align: center;
+        margin: 6px auto;
+        cursor: pointer;
+    }
+    
+    .txt {
+        position: absolute;
+        top: 170px;
+        left: 140px;
+    }
+    
+    .animation:hover {
+        filter: grayscale(0);
+        animation: rotate-infinite 5000ms linear infinite;
+    }
+    
+    @keyframes rotate-infinite {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+     :root {
+        --black: #242424;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .header {
+        padding: 1rem 12rem;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .header-menu {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .hd-menu-item {
+        list-style-type: none;
+        padding: 0.7rem 2rem;
+    }
+    
+    .hd-menu-item>a {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: var(--black);
+    }
+    
+    .brand,
+    .hd-menu-item>a {
+        text-decoration: none;
+    }
+    
+    .active-c {
+        padding: 5px;
+        border-radius: 10%;
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(39, 218, 235));
+        color: var(--black) !important;
+    }
+    
+    .color-animation {
+        animation: color-change 5s infinite;
+        font-weight: 550;
+        text-shadow: 2px 2px 2px grey;
+    }
+    
+    @keyframes color-change {
+        0% {
+            color: red;
+        }
+        50% {
+            color: blue;
+        }
+        100% {
+            color: rgb(106, 255, 106);
+        }
+    }
+    
+    @keyframes box-shape {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .animation-shape {
+        width: 100%;
+        position: relative;
+    }
+    
+    .box1 {
+        top: 3rem;
+        left: 10rem;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 2px solid red;
+        border-radius: 25%;
+        z-index: -1;
+        transform: rotate(360deg);
+        animation: box-shape linear 5s infinite;
+    }
+    
+    .box2 {
+        top: 3rem;
+        right: 10rem;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgb(40, 20, 223);
+        border-radius: 5%;
+        z-index: -1;
+        transform: rotate(360deg);
+        animation: box-shape linear 5s infinite;
+    }
+    
+    .box3 {
+        top: 24rem;
+        right: 10rem;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgb(51, 250, 11);
+        border-radius: 80%;
+        z-index: -1;
+        transform: rotate(360deg);
+        animation: box-shape linear 5s infinite;
+    }
+    
+    .box4 {
+        top: 25rem;
+        right: 20rem;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        font-size: 3rem;
+        color: yellow;
+        border-radius: 25%;
+        z-index: -1;
+        transform: rotate(360deg);
+        animation: box-shape linear 5s infinite;
+    }
+    
+    .box5 {
+        top: 15rem;
+        right: 50rem;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 25%;
+        z-index: -1;
+        transform: rotate(360deg);
+        animation: box-shape linear 5s infinite;
+        font-size: 2rem;
+        color: rgb(233, 10, 177);
+    }
+    
+    @media only screen and (max-width:700px) {
+        .header {
+            padding: 1rem 1rem;
+            background: linear-gradient(to right, white, rgb(88, 226, 226));
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .header-menu {
+            display: hide;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .hd-menu-item {
+            list-style-type: none;
+            padding: 0.7rem 2px;
+        }
+        .active-c {
+            border: 0.5px solid rgb(0, 0, 0);
+            background: linear-gradient(to right, rgb(255, 255, 255), rgb(39, 218, 235));
+        }
+    }
+    
+    .profile,
+    .skill,
+    .project,
+    .contact {
+        max-width: 500px;
+        height: 300px;
+        border-left: 6px solid rgb(144, 252, 111);
+        background-color: rgb(236, 232, 232);
+        width: 80%;
+        margin: 20px auto 0;
+        padding: 50px;
+        border-radius: 31px;
+        background-image: url("https://cdn.pixabay.com/photo/2021/03/27/06/31/code-6127616_960_720.png");
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+    }
+    
+    section:hover {
+        box-shadow: 2px 2px 11px grey;
+    }
+    
+    .prl-txt>p,
+    h4 {
+        text-shadow: 2px 1px 0px white;
+    }
+    
+    .skill-txt>li>i {
+        font-size: 23px;
+        color: red;
+        text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    }
+    
+    section>ul>li:hover {
+        list-style-type: square;
+        padding: 2px;
+    }
+    
+    .project-txt>li>a {
+        text-decoration: none;
+        color: var(--black);
+    }
+    
+    .cnt-txt>li>a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        text-shadow: 2px 2px 0px white;
+    }
+    
+    .cnt-txt>li>a>i {
+        font-size: 23px;
+        color: rgb(87, 85, 85);
+    }

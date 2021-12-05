@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wander_taj</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div>
+            <h2><a href="/" class="brand color-animation">Tajulkhan{UI Developer}</a></h2>
+        </div>
+
+        <div>
+            <ul class="header-menu">
+                <li class="hd-menu-item"><a href="#profile">Profile</a></li>
+                <li class="hd-menu-item"><a href="#skill">Skill</a></li>
+                <li class="hd-menu-item"><a href="#project">Project</a></li>
+                <li class="hd-menu-item"><a href="#contact" class="active-c">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="profile" id="profile">
+            <div class="prl-txt">
+                <h4>Hi i am B.MOHAMED TAJUL KHAN</h4>
+                <h4>UI Developer</h4>
+                <p>7+ Months Experience</p>
+                <p>BCA-complete-2020</p>
+            </div>
+        </section>
+
+        <section class="skill" id="skill">
+            <h4>Skill</h4>
+            <ul class="skill-txt">
+                <li>Html<i class="fab fa-html5"></i></li>
+                <li>Css<i class="fab fa-css3-alt"></i></li>
+                <li>Bootstrap5<i class="fab fa-bootstrap"></i></li>
+                <li>Figma<i class="fab fa-figma"></i></li>
+                <li>Photoshop cc <i class="fas fa-bezier-curve"></i></li>
+                <li>Markdown<i class="fab fa-markdown"></i></li>
+            </ul>
+        </section>
+
+        <section class="project" id="project">
+            <h4>Projects</h4>
+            <ul class="project-txt">
+                <li><a href="http://beta.projectmadurai.org/">Project1</a></li>
+                <li><a href="https://techatpark.com/">Project2</a></li>
+                <li><a href="https://gurukulams.com/">Project3</a></li>
+            </ul>
+        </section>
+
+        <section class="contact" id="contact">
+            <h4>Contact</h4>
+            <ul class="cnt-txt">
+                <li><a target="_blank" href="https://github.com/tajulkhan ">Git hub <i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/tajul-khan-b-s-513758220/">Linkedin <i class="fab fa-linkedin"></i></a></li>
+                <li><a href="/">tajulbasheer@gmail.com<i class="fas fa-mail-bulk"></i></a></li>
+                <li><a href="#">Instagram <i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </section>
+    </main>
+
+
+    <!-- <div class="dropdown">
+        <button class="btn">dropdown <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-down" viewBox="0 0 16 16">
+            <path d="M7.646.146a.5.5 0 0 1 .708 0L10.207 2H14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h3.793L7.646.146zM1 7v3h14V7H1zm14-1V4a1 1 0 0 0-1-1h-3.793a1 1 0 0 1-.707-.293L8 1.207l-1.5 1.5A1 1 0 0 1 5.793 3H2a1 1 0 0 0-1 1v2h14zm0 5H1v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zM2 4.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+          </svg></button>
+        <div class="dd-content">
+            <a href="#">hii</a>
+            <a href="#">hello</a>
+            <a href="#">how r u</a>
+        </div>
+    </div> -->
+    <!-- <div class="animation-shape">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4">
+                <i class="far fa-stars"></i>
+            </div>
+            <div class="box5">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+        <p id="p">tajulkhan</p> -->
+    <script src="assets/js/js.js"></script>
+
+
+</body>
+
+</html>
